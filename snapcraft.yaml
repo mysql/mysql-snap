@@ -50,7 +50,7 @@ apps:
 parts:
   mysql-server:
     prepare: ./stage_binaries.sh
-    build-packages: [libaio-dev, libnuma-dev, libmecab-dev]
+    build-packages: [libaio-dev, libmecab-dev, libnuma-dev, libncurses5-dev, zlib1g-dev]
     plugin: dump
     source: ./
     organize:
