@@ -50,6 +50,7 @@ apps:
 parts:
   mysql-server:
     prepare: ./stage_binaries.sh
+    build-packages: [wget]
     plugin: dump
     source: ./
     organize:
